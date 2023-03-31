@@ -9,6 +9,7 @@ git fetch origin
 git checkout 2203.1
 
 rover \
+  --impersonate-sp-from-keyvault-url https://ms-caf-kv-idl0-cps.vault.azure.net/ \
   -lz /tf/caf/landingzones/caf_solution \
   -var-folder /tf/caf/configuration/level2/asvm \
   -tfstate_subscription_id 32fd7f83-a8c8-4932-84e7-46f33936d970 \

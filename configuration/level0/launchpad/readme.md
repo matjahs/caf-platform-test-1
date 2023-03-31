@@ -34,6 +34,7 @@ git checkout 2203.1
 git pull
 
 rover \
+  --impersonate-sp-from-keyvault-url https://ms-caf-kv-idl0-cps.vault.azure.net/ \
   -lz /tf/caf/landingzones/caf_launchpad \
   -var-folder /tf/caf/configuration/level0/launchpad \
   -tfstate_subscription_id 32fd7f83-a8c8-4932-84e7-46f33936d970 \
@@ -54,6 +55,7 @@ If the plan is not successfull you need to come back to the yaml ignite.yaml, fi
 # On success plan, execute
 
 rover \
+  --impersonate-sp-from-keyvault-url https://ms-caf-kv-idl0-cps.vault.azure.net/ \
   -lz /tf/caf/landingzones/caf_launchpad \
   -var-folder /tf/caf/configuration/level0/launchpad \
   -tfstate_subscription_id 32fd7f83-a8c8-4932-84e7-46f33936d970 \
