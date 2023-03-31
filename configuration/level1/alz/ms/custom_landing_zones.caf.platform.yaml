@@ -4,11 +4,13 @@ archetype_definitions:
     archetype_id: landingzone_corp
     parent_management_group_id: landing-zones
     subscription_ids:
+      - 68330c89-d720-45c9-ad6c-c8f4f8cd01bf
   online:
     display_name: Online
     archetype_id: landingzone_online
     parent_management_group_id: landing-zones
     subscription_ids:
+      - b92a35c1-1112-40c0-986e-a6eb90ddca3f
   corp-prod:
     display_name: Production
     archetype_id: landingzone_prod

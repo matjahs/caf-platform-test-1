@@ -16,7 +16,17 @@ rover \
   -env matjahs \
   -level level1 \
   -p ${TF_DATA_DIR}/platform_subscriptions.tfstate.tfplan \
-  -a plan
+  -a plan && \
+rover \
+  --impersonate-sp-from-keyvault-url https://ms-caf-kv-scp-rpi.vault.azure.net/ \
+  -lz /tf/caf/landingzones/caf_solution \
+  -var-folder /tf/caf/configuration/level1/subscriptions \
+  -tfstate_subscription_id 32fd7f83-a8c8-4932-84e7-46f33936d970 \
+  -tfstate platform_subscriptions.tfstate \
+  -env matjahs \
+  -level level1 \
+  -p ${TF_DATA_DIR}/platform_subscriptions.tfstate.tfplan \
+  -a apply
 
 ```
 
