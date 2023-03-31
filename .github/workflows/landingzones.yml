@@ -26,7 +26,7 @@ jobs:
         convention: ["random", "cafrandom"]
     
     container:
-      image: aztfmod/rover:2211.2307
+      image: aztfmod/rover:1.4.2-2303.2414
       options: --user 0
     
     steps:
@@ -58,7 +58,7 @@ jobs:
         environment: ["prod"]
     
     container:
-      image: aztfmod/rover:2211.2307
+      image: aztfmod/rover:1.4.2-2303.2414
       options: --user 0
     
     steps:
@@ -106,7 +106,7 @@ jobs:
           environment: ["integration-tests"]
 
     container:
-      image: aztfmod/rover:2211.2307
+      image: aztfmod/rover:1.4.2-2303.2414
       options: --user 0
 
     steps:
