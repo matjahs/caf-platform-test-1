@@ -8,10 +8,10 @@ on:
 env:
   TF_CLI_ARGS: '-no-color'
   TF_CLI_ARGS_destroy: '-auto-approve -refresh=false'
-  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_TOKEN }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
   ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
   ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
-  ARM_TENANT_ID: ${{ secrets.TENANT_ID }}
+  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
   TFVARS_PATH: '/tf/caf/environments'
 
 jobs:
