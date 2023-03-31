@@ -94,3 +94,4 @@ cd /tf/caf && rover -bootstrap \
   -sub-security <guid for security>
 
 ```
+{'region1': 'westeurope', 'region2': 'northeurope'}
