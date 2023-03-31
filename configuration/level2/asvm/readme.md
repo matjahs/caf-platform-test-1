@@ -6,7 +6,7 @@ rover login -t caftest1.onmicrosoft.com
 
 cd /tf/caf/landingzones
 git fetch origin
-git checkout 2203.2
+git checkout 2203.1
 
 rover \
   -lz /tf/caf/landingzones/caf_solution \
